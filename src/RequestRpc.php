@@ -36,7 +36,7 @@ class RequestRpc
             $addr = $consuladdr;
         }catch (\Exception $exception){
             //获取node节点服务地址
-            $addr = env('HYERRF_SERVICE_URI');
+            $addr = env('HYPERF_SERVICE_URI');
         }
 
         //连接服务和发送数据

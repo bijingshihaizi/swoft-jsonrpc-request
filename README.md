@@ -8,7 +8,7 @@
 
 ```
 # hyperf service
-HYERRF_SERVICE_URI=tcp://127.0.0.1:9503
+HYPERF_SERVICE_URI=tcp://127.0.0.1:9503
 ```
 
 
