@@ -11,15 +11,15 @@ class RequestRpc
     private $client;
 
     public function __construct(){
-        $this->consul = env('CONSUL_ADDRESS');
+        $this->consul = env('CONSUL_ADDRESS').':'.env('CONSUL_PORT');
         $this->client = $this->client = new Client();
     }
 
     public function send($name, $method, $params){
         try{
             //consul健康检查和获取服务
-            $check = $this->client->request('GET',$this->consul.':8500/v1/agent/checks');
-            $service = $this->client->request('GET', $this->consul.':8500/v1/agent/services');
+            $check = $this->client->request('GET',$this->consul.'/v1/agent/checks');
+            $service = $this->client->request('GET', $this->consul.'/v1/agent/services');
             $checks = json_decode((string) $check->getBody(),true);
             $services = json_decode((string) $service->getBody(),true);
 
