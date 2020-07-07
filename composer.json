@@ -1,0 +1,21 @@
+{
+    "name": "swoft/jsonrpcrequest",
+    "description": "swoft客户端调用hyperf-jsonrpc服务",
+    "authors": [
+        {
+            "name": "cvl",
+            "email": "1225448773@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JsonRpcRequest\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra":{
+        "branch-alias":{
+            "dev-master":"1.0.x-dev"
+        }
+    }
+}
