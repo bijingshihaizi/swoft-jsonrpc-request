@@ -1,5 +1,5 @@
 {
-    "name": "jsonrpc/swoftrequest",
+    "name": "vnloco/jsonrpcrequest",
     "description": "swoft客户端调用hyperf-jsonrpc服务",
     "authors": [
         {
