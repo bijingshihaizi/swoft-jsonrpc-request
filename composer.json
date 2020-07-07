@@ -1,5 +1,5 @@
 {
-    "name": "swoft/jsonrpcrequest",
+    "name": "jsonrpc/swoftrequest",
     "description": "swoft客户端调用hyperf-jsonrpc服务",
     "authors": [
         {
